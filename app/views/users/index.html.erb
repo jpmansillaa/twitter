@@ -5,7 +5,7 @@
 <div class="my-5">
   <%= form_with url: users_path, method: :get do |form| %>
     <%= form.text_field :query_text, placeholder: "Buscador", value: params[:query_text]%>
-    <%= form.submit "Buscar", class:"btn btn-primary" %>
+    <%= form.submit "Buscar", class:"btn btn-secondary" %>
   <% end %>
 </div>
 
@@ -13,12 +13,11 @@
 
 <table class="table mb-5 table-dark table-striped">
   <thead>
-   
+    
   </thead>
   <tbody>
   <% @users.each do |user| %>
     <tr>
-      
       <td> <%= user.name %></td>
       <td> <%= user.description %></td>
       <td class="d-flex gap-5">
