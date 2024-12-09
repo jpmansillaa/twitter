@@ -13,16 +13,12 @@
 
 <table class="table mb-5 table-dark table-striped">
   <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">name</th>
-      <th scope="col">description</th>
-    </tr>
+   
   </thead>
   <tbody>
   <% @users.each do |user| %>
     <tr>
-      <td> <%= user.id %></td>
+      
       <td> <%= user.name %></td>
       <td> <%= user.description %></td>
       <td class="d-flex gap-5">
